@@ -1,0 +1,38 @@
+.who-i-am {
+	h1 {
+		font-size: 3rem;
+		span {
+			color: $text-c-dm-2;
+		}
+	}
+	p {
+		padding: 1rem 0;
+		color: $text-c-dm-3;
+		font-size: 1.2rem;
+	}
+	.center-btns {
+		@include center-flex;
+		justify-content: start;
+		gap: 1rem;
+		padding: 1rem 0;
+		.btn {
+			font-size: 1rem;
+			padding: 0.5em 1em;
+			cursor: pointer;
+			border-radius: 5px;
+			color: $text-c-dark-mode;
+			font-weight: 600;
+		}
+		.btn1 {
+			background: #2c2c2c;
+			border: 2px solid transparent;
+		}
+		.btn2 {
+			background: 0;
+			border: 2px solid #2c2c2c;
+			i {
+				padding-right: 0.6rem;
+			}
+		}
+	}
+}

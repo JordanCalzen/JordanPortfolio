@@ -1,0 +1,28 @@
+.latest-releases {
+	padding: 2rem 0;
+
+	h1 {
+		font-size: 1.3rem;
+	}
+	.new-drops {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		gap: 2rem;
+		margin: 2rem 0;
+		.new-drop {
+			height: 24rem;
+			border: 1px solid #2c2c2c;
+			background: #1c1c1c;
+			border-radius: 8px;
+			overflow: hidden;
+			img {
+				@include images-reset;
+				height: 70%;
+			}
+			.drop {
+				padding: 1rem;
+			}
+		}
+	}
+}

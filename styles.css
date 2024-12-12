@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #09090b;
+  color: #fafafa;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1400px;
+}
+
+.hero-container {
+  display: flex;
+  position: relative;
+}
+
+.hero-right {
+  width: 80%;
+  padding: 7rem;
+}
+
+.hero-left {
+  width: 20%;
+  background: #1c1c1c;
+  min-height: 100vh;
+  padding: 0.5rem 0.4rem;
+}
+.hero-left .profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  gap: 1rem;
+}
+.hero-left .profile .profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hero-left .profile .profile-pic img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.hero-left .profile .content h1,
+.hero-left .profile .content h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.hero-left .profile .content h2 {
+  color: #a1a1aa;
+}
+.hero-left button {
+  background: 0;
+  border: 0;
+  font-size: 1rem;
+  padding: 1em;
+  color: #a1a1aa;
+  display: block;
+}
+.hero-left button i {
+  color: #a1a1aa;
+  margin-right: 0.4rem;
+}
+.hero-left button .space {
+  margin-left: 2rem;
+}
+
+.who-i-am h1 {
+  font-size: 3rem;
+}
+.who-i-am h1 span {
+  color: #a1a1aa;
+}
+.who-i-am p {
+  padding: 1rem 0;
+  color: #a3a3a3;
+  font-size: 1.2rem;
+}
+.who-i-am .center-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.who-i-am .center-btns .btn {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fafafa;
+  font-weight: 600;
+}
+.who-i-am .center-btns .btn1 {
+  background: #2c2c2c;
+  border: 2px solid transparent;
+}
+.who-i-am .center-btns .btn2 {
+  background: 0;
+  border: 2px solid #2c2c2c;
+}
+.who-i-am .center-btns .btn2 i {
+  padding-right: 0.6rem;
+}
+
+.latest-releases {
+  padding: 2rem 0;
+}
+.latest-releases h1 {
+  font-size: 1.3rem;
+}
+.latest-releases .new-drops {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.latest-releases .new-drops .new-drop {
+  height: 24rem;
+  border: 1px solid #2c2c2c;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.latest-releases .new-drops .new-drop img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  height: 70%;
+}
+.latest-releases .new-drops .new-drop .drop {
+  padding: 1rem;
+}
+
+.thoughts-container {
+  width: 100%;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  height: 25rem;
+}
+.thoughts-container .samebcc {
+  height: 70%;
+  width: 100%;
+}
+.thoughts-container .differentbcc {
+  height: 30%;
+  width: 100%;
+  background: #1c1c1c;
+}/*# sourceMappingURL=styles.css.map */

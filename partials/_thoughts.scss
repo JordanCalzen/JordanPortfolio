@@ -1,0 +1,15 @@
+.thoughts-container {
+	width: 100%;
+	border: 1px solid #2c2c2c;
+	border-radius: 8px;
+	height: 25rem;
+	.samebcc {
+		height: 70%;
+		width: 100%;
+	}
+	.differentbcc {
+		height: 30%;
+		width: 100%;
+		background: #1c1c1c;
+	}
+}
