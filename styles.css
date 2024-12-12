@@ -24,6 +24,7 @@ main {
 .hero-right {
   width: 80%;
   padding: 7rem;
+  padding: clamp(2rem, 15vh, 7rem);
 }
 
 .hero-left {
@@ -31,6 +32,11 @@ main {
   background: #1c1c1c;
   min-height: 100vh;
   padding: 0.5rem 0.4rem;
+}
+@media (max-width: 800px) {
+  .hero-left {
+    display: none;
+  }
 }
 .hero-left .profile {
   width: 100%;
@@ -152,14 +158,117 @@ main {
   width: 100%;
   border: 1px solid #2c2c2c;
   border-radius: 8px;
-  height: 25rem;
 }
 .thoughts-container .samebcc {
-  height: 70%;
+  height: 75%;
   width: 100%;
 }
+.thoughts-container .samebcc h1 {
+  font-size: 1rem;
+  padding: 1rem;
+}
+.thoughts-container .samebcc p {
+  padding: 0 1rem;
+  color: #a3a3a3;
+  font-size: 1rem;
+}
+.thoughts-container .samebcc .skills-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+@media (max-width: 1070px) {
+  .thoughts-container .samebcc .skills-column {
+    grid-template-columns: 1fr;
+  }
+}
+.thoughts-container .samebcc .skills-column .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  gap: 2rem;
+}
+.thoughts-container .samebcc .skills-column .skills .skill-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thoughts-container .samebcc .skills-column .skills .skill-icon i {
+  font-size: 1.5rem;
+}
+.thoughts-container .samebcc .skills-column .skills .skill-text h2 {
+  font-size: 1.1rem;
+}
+.thoughts-container .samebcc .skills-column .skills .skill-text p {
+  font-size: 1rem;
+  color: #a3a3a3;
+  padding: 0;
+}
+@media (max-width: 1070px) {
+  .thoughts-container .samebcc .skills-column .dn {
+    display: none;
+  }
+}
 .thoughts-container .differentbcc {
-  height: 30%;
+  height: 25%;
   width: 100%;
   background: #1c1c1c;
+}
+.thoughts-container .differentbcc .differ {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 995px) {
+  .thoughts-container .differentbcc .differ {
+    display: block;
+  }
+}
+.thoughts-container .differentbcc .differ .inputBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+@media (min-width: 996px) {
+  .thoughts-container .differentbcc .differ .inputBtn {
+    flex-direction: row;
+  }
+}
+.thoughts-container .differentbcc .differ .inputBtn input {
+  font-size: 1rem;
+  padding: 0.4em 0;
+  border-radius: 6px;
+  outline: 0;
+  background: 0;
+  border: 1px solid #2c2c2c;
+}
+@media (max-width: 995px) {
+  .thoughts-container .differentbcc .differ .inputBtn input {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+.thoughts-container .differentbcc .differ .inputBtn .skill-btn {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background: #393939;
+  border: 1px solid #2c2c2c;
+  border-radius: 6px;
+  color: #fafafa;
+}
+@media (max-width: 995px) {
+  .thoughts-container .differentbcc .differ .inputBtn .skill-btn {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
