@@ -1,0 +1,19 @@
+footer {
+	background: #1c1c1c;
+	min-height: 50vh;
+	width: 100%;
+	border: 1px solid #2c2c2c;
+	// padding-left: 20rem;
+	// margin-right: 5rem;
+
+	.footer-content {
+		padding: 3rem;
+		background-color: green;
+		// margin-right: 432px;
+
+		h1 {
+			color: white;
+			background-color: red;
+		}
+	}
+}

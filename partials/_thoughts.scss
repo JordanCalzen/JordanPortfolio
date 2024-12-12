@@ -1,9 +1,9 @@
-.thoughts-container {
+.stacks {
 	width: 100%;
 	border: 1px solid #2c2c2c;
 	border-radius: 8px;
 
-	.samebcc {
+	.stack {
 		height: 75%;
 		width: 100%;
 		h1 {
@@ -56,53 +56,16 @@
 			}
 		}
 	}
-	.differentbcc {
-		height: 25%;
-		width: 100%;
-		background: #1c1c1c;
-		.differ {
-			padding: 2rem 1rem;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			@media (max-width: 995px) {
-				display: block;
-			}
-			.inputBtn {
-				display: flex;
-				flex-direction: column;
-				gap: 1rem;
-				padding: 1rem 0;
-				@media (min-width: 996px) {
-					flex-direction: row;
-				}
-				input {
-					font-size: 1rem;
-					padding: 0.4em 0;
-					border-radius: 6px;
-					outline: 0;
-					background: 0;
-					border: 1px solid #2c2c2c;
-					@media (max-width: 995px) {
-						display: block;
-						margin: auto;
-						width: 100%;
-					}
-				}
-				.skill-btn {
-					font-size: 1rem;
-					padding: 0.5em 1em;
-					background: #393939;
-					border: 1px solid #2c2c2c;
-					border-radius: 6px;
-					color: $text-c-dark-mode;
-					@media (max-width: 995px) {
-						display: block;
-						margin: auto;
-						width: 100%;
-					}
-				}
-			}
+	.view {
+		padding: 1rem;
+		.view-btn {
+			font-size: 1rem;
+			padding: 0.5em 1em;
+			background: #393939;
+			border: 1px solid #2c2c2c;
+			border-radius: 6px;
+			color: $text-c-dark-mode;
+			width: 100%;
 		}
 	}
 }

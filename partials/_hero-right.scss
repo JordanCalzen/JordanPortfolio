@@ -1,8 +1,10 @@
 .hero-right {
-	width: 80%;
+	// width: 80%;
 	padding: 7rem;
-	margin: auto;
-
+	align-items: center;
+	align-content: center;
+	padding-left: 20rem;
+	overflow-x: hidden;
 	@media (max-width: 800px) {
 		padding: 4rem;
 	}
