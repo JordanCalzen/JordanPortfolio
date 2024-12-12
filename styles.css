@@ -7,7 +7,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #09090b;
+  background: rgba(0, 0, 0, 0.945);
   color: #fafafa;
   overflow-x: hidden;
 }
@@ -133,7 +133,7 @@ main {
 }
 
 .latest-releases {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .latest-releases h1 {
   font-size: 1.3rem;
@@ -141,9 +141,9 @@ main {
 .latest-releases .new-drops {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .latest-releases .new-drops .new-drop {
   height: 24rem;
@@ -282,4 +282,19 @@ main {
     margin: auto;
     width: 100%;
   }
+}
+
+.hava-a-look {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+  margin: 2rem 0;
+}
+.hava-a-look .looks {
+  height: 13rem;
+  background: #1c1c1c;
+  border-radius: 8px;
+  border: 1px solid #2c2c2c;
+  padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */

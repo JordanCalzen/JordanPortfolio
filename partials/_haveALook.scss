@@ -1,0 +1,14 @@
+.hava-a-look {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 3rem;
+	margin: 2rem 0;
+	.looks {
+		height: 13rem;
+		background: #1c1c1c;
+		border-radius: 8px;
+		border: 1px solid #2c2c2c;
+		padding: 1rem;
+	}
+}

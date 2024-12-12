@@ -1,5 +1,5 @@
 .latest-releases {
-	padding: 2rem 0;
+	padding: 1rem 0;
 
 	h1 {
 		font-size: 1.3rem;
@@ -7,9 +7,9 @@
 	.new-drops {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 		gap: 2rem;
-		margin: 2rem 0;
+		margin: 1rem 0;
 		.new-drop {
 			height: 24rem;
 			border: 1px solid #2c2c2c;
