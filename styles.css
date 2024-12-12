@@ -24,7 +24,17 @@ main {
 .hero-right {
   width: 80%;
   padding: 7rem;
-  padding: clamp(2rem, 15vh, 7rem);
+  margin: auto;
+}
+@media (max-width: 800px) {
+  .hero-right {
+    padding: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero-right {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .hero-left {
@@ -201,6 +211,7 @@ main {
 }
 .thoughts-container .samebcc .skills-column .skills .skill-icon i {
   font-size: 1.5rem;
+  color: #fafafa;
 }
 .thoughts-container .samebcc .skills-column .skills .skill-text h2 {
   font-size: 1.1rem;

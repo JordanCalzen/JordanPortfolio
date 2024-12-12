@@ -1,8 +1,12 @@
 .hero-right {
 	width: 80%;
 	padding: 7rem;
-	padding: clamp(2rem, 15vh, 7rem);
-	// @media (max-width: 800px){
-	// 	padding: ;
-	// }
+	margin: auto;
+
+	@media (max-width: 800px) {
+		padding: 4rem;
+	}
+	@media (max-width: 500px) {
+		padding: 1rem 1.5rem;
+	}
 }
