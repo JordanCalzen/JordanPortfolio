@@ -1,6 +1,6 @@
 .who-i-am {
 	h1 {
-		font-size: 3rem;
+		font-size: clamp(2.2rem, 5vh, 3.2rem);
 		span {
 			color: $text-c-dm-2;
 		}
@@ -8,7 +8,7 @@
 	p {
 		padding: 1rem 0;
 		color: $text-c-dm-3;
-		font-size: 1.2rem;
+		font-size: clamp(0.8rem, 1vh, 1rem);
 	}
 	.center-btns {
 		@include center-flex;
