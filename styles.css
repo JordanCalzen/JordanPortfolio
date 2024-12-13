@@ -11,6 +11,16 @@ body {
   color: #fafafa;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, gray, black);
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 main {
   max-width: 1400px;
@@ -142,6 +152,22 @@ main {
   position: relative;
 }
 
+.hero-left-small {
+  width: 50px;
+  height: 100vh;
+  background-color: green;
+  padding: 0.5rem;
+}
+.hero-left-small button {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.4em 1em;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
 .hero-right {
   padding: 7rem;
   align-items: center;
@@ -156,7 +182,7 @@ main {
 }
 @media (max-width: 500px) {
   .hero-right {
-    padding: 2rem 0.5rem;
+    padding: 5rem 1rem;
   }
 }
 
@@ -169,7 +195,6 @@ main {
   top: 0;
   left: 0;
   flex: 0;
-  z-index: 10;
   will-change: transform;
   border: 1px solid #2c2c2c;
 }
@@ -221,6 +246,31 @@ main {
 }
 .hero-left button .space {
   margin-left: 2rem;
+}
+.hero-left .minBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -13px;
+  top: 70px;
+}
+.hero-left .minBtn .minmizeBtn {
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.hero-left .minBtn .minmizeBtn i {
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.minimal {
+  transform: translateX(-150px);
 }
 
 .who-i-am h1 {
@@ -389,12 +439,113 @@ footer {
   min-height: 50vh;
   width: 100%;
   border: 1px solid #2c2c2c;
+  margin: auto;
 }
 footer .footer-content {
   padding: 3rem;
   background-color: green;
 }
+@media (max-width: 500px) {
+  footer .footer-content {
+    padding: 1rem;
+  }
+}
 footer .footer-content h1 {
   color: white;
   background-color: red;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 835px) {
+  nav {
+    display: none;
+  }
+}
+nav .topnav {
+  background-color: #0e0e0e;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+nav .topnav a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+@media (min-width: 450px) {
+  nav .topnav a {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
+nav .topnav a .tnavLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .topnav a .tnavLeft .mypic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+nav .topnav a .tnavLeft .mypic img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+nav .topnav a .tnavLeft .myprofessional h1 {
+  font-size: 1rem;
+  color: #fafafa;
+}
+nav .topnav a .tnavLeft .myprofessional h2 {
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+nav .topnav a .modeSwitch {
+  font-size: 1.4rem;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border: 1px solid #2c2c2c;
+  background: #1c1c1c;
+  color: #fafafa;
+}
+nav .bottomnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #2c2c2c;
+  padding: 0.8rem;
+  padding-left: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media (min-width: 450px) {
+  nav .bottomnav {
+    gap: 7rem;
+  }
+}
+nav .bottomnav a {
+  text-decoration: none;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+nav .bottomnav a i {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */

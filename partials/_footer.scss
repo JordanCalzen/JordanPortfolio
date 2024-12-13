@@ -3,6 +3,7 @@ footer {
 	min-height: 50vh;
 	width: 100%;
 	border: 1px solid #2c2c2c;
+	margin: auto;
 	// padding-left: 20rem;
 	// margin-right: 5rem;
 
@@ -10,7 +11,9 @@ footer {
 		padding: 3rem;
 		background-color: green;
 		// margin-right: 432px;
-
+		@media (max-width: 500px) {
+			padding: 1rem;
+		}
 		h1 {
 			color: white;
 			background-color: red;

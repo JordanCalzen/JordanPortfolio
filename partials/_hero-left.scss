@@ -7,9 +7,10 @@
 	top: 0;
 	left: 0;
 	flex: 0;
-	z-index: 10;
+	// z-index: 10;
 	will-change: transform;
 	border: 1px solid #2c2c2c;
+	// display: none;
 
 	@media (max-width: 800px) {
 		display: none;
@@ -58,4 +59,31 @@
 			margin-left: 2rem;
 		}
 	}
+	.minBtn {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #2c2c2c;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		right: -13px;
+		top: 70px;
+
+		.minmizeBtn {
+			color: white;
+			border: 0;
+			cursor: pointer;
+			i {
+				font-size: 1.2rem;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.minimal {
+	transform: translateX(-150px);
+	// transition: 0.3s ease-in-out;
 }

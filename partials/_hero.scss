@@ -3,3 +3,19 @@
 	flex-direction: column;
 	position: relative;
 }
+
+.hero-left-small {
+	width: 50px;
+	height: 100vh;
+	background-color: green;
+	padding: 0.5rem;
+	button {
+		display: block;
+		margin: auto;
+		width: 100%;
+		font-size: 1rem;
+		padding: 0.4em 1em;
+		margin-bottom: 5px;
+		border-radius: 10px;
+	}
+}
