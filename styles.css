@@ -150,6 +150,7 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 .hero-left-small {
@@ -458,6 +459,7 @@ footer .footer-content h1 {
 nav {
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 @media (min-width: 835px) {
   nav {
