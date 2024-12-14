@@ -146,6 +146,11 @@ main {
   }
 }
 
+.dark-theme {
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.945);
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -523,6 +528,7 @@ nav .topnav a .modeSwitch {
   border: 1px solid #2c2c2c;
   background: #1c1c1c;
   color: #fafafa;
+  cursor: pointer;
 }
 nav .bottomnav {
   display: flex;

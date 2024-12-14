@@ -5,6 +5,7 @@ body {
 	background: $bcc-dark-mode;
 	color: $text-c-dark-mode;
 	overflow-x: hidden;
+
 	&::-webkit-scrollbar {
 		width: 8px; // Width of the scrollbar
 	}
@@ -134,4 +135,14 @@ main {
 			}
 		}
 	}
+}
+
+.dark-theme {
+	// $bcc-dark-mode: #fafafa;
+	// $text-c-dark-mode: rgba(0, 0, 0, 0.945);
+	// $text-c-dm-2: #09090bf5;
+	// $text-c-dm-3: #0a0a0af3;
+
+	background-color: #fafafa;
+	color: rgba(0, 0, 0, 0.945);
 }
