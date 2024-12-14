@@ -183,7 +183,7 @@ main {
 }
 @media (max-width: 500px) {
   .hero-right {
-    padding: 5rem 1rem;
+    padding: 5rem 1.4rem;
   }
 }
 
