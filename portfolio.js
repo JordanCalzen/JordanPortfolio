@@ -19,7 +19,8 @@ if (localStorage.getItem("theme") === "dark") {
 }
 
 // Toggle theme and save preference
-modeSwitch.addEventListener("click", () => {
+modeSwitch.addEventListener("click", (e) => {
+	e.preventDefault();
 	document.body.classList.toggle("dark-theme");
 
 	// Save theme state
