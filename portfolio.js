@@ -15,7 +15,6 @@ const modeSwitch = document.querySelector(".modeSwitch");
 // Check and apply saved theme on page load
 if (localStorage.getItem("theme") === "dark") {
 	document.body.classList.add("dark-theme");
-	modeSwitch.innerHTML = `<i class='bx bx-moon bx-tada' ></i>`;
 }
 
 // Toggle theme and save preference
@@ -26,7 +25,9 @@ modeSwitch.addEventListener("click", (e) => {
 	// Save theme state
 	if (document.body.classList.contains("dark-theme")) {
 		localStorage.setItem("theme", "dark");
+		modeSwitch.innerHTML = `<i class='bx bx-moon bx-tada' ></i>`;
 	} else {
 		localStorage.setItem("theme", "light");
+		modeSwitch.innerHTML = `<i class="bx bx-sun bx-tada"></i>`;
 	}
 });
